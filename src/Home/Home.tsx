@@ -1,5 +1,4 @@
 import "./Home.css";
-import Header from "../Header/Header";
 import Building from "../assets/building.png";
 import Arrow from "../assets/arrow.png";
 import Ideas from "../assets/ideas.png";
@@ -10,7 +9,6 @@ import Prototype from "../assets/prototype.png";
 function Home() {
   return (
     <div className="overflow-x-hidden">
-      <Header />
       <div className="relative">
         <img src={Building} className="w-full"></img>
         <div className="absolute bottom-0 top-20  w-full px-6">

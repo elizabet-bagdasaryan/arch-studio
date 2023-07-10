@@ -6,6 +6,7 @@ export default {
       colors: {
         black: "#1B1D23",
         gray: "#60636D",
+        graylight: "#EEEFF4",
       },
     },
   },

@@ -1,0 +1,18 @@
+.footer {
+  position: relative;
+}
+
+.foot-logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 100px;
+}
+
+.navbar {
+  margin: 100px 0 40px;
+}
+
+.navbar p {
+  margin: 20px 0;
+}
