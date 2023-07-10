@@ -3,8 +3,48 @@ import Phone from "../assets/phone.png";
 import Map from "../assets/map.png";
 import View from "../assets/view.png";
 import Arrow from "../assets/arrow.png";
-
+import { useState } from "react";
 function Contact() {
+  const [name, setName] = useState("");
+  const [nameError, setNameError] = useState(false);
+
+  const [email, setEmail] = useState("");
+  const [emailError, setEmailError] = useState(false);
+  const [emailEmptyError, setEmailEmptyError] = useState(false);
+
+  const [message, setMessage] = useState("");
+  const [messageError, setMessageError] = useState(false);
+
+  const validateInputs = () => {
+    let isValid = true;
+
+    if (!name.trim()) {
+      setNameError(true);
+      isValid = false;
+    } else {
+      setNameError(false);
+    }
+
+    if (!message.trim()) {
+      setMessageError(true);
+      isValid = false;
+    } else {
+      setMessageError(false);
+    }
+
+    if (!email.trim()) {
+      setEmailError(true);
+      setEmailEmptyError(false);
+      isValid = false;
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)) {
+      setEmailEmptyError(true);
+      setEmailError(false);
+      isValid = false;
+    } else {
+      setEmailEmptyError(false);
+      setEmailError(false);
+    }
+  };
   return (
     <>
       <div className="relative ">
@@ -51,18 +91,41 @@ function Contact() {
           Connect <br /> with us
         </h2>
         <form>
-          <div className="container">
-            <input type="text" placeholder="Name" />
+          <div className={nameError ? "error" : "container"}>
+            <input
+              placeholder="Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            {nameError && <span className="error"> Can't be empty</span>}
           </div>
-          <br />
-          <div className="container">
-            <input type="email" placeholder="Email" />
+
+          <div className={emailError ? "error" : "container"}>
+            <input
+              className={emailError ? "error" : ""}
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            {emailError && <span className="error">Can't be empty</span>}
+            {emailEmptyError && (
+              <span className="error">Should match email format</span>
+            )}
           </div>
-          <br />
-          <div className="container ">
-            <input type="text" placeholder="Message" />
+
+          <div className={messageError ? "error" : "container"}>
+            <input
+              className={messageError ? "error" : ""}
+              placeholder="Message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+            {messageError && <span className="error">Can't be empty</span>}
           </div>
-          <div className="bg-black w-16 h-16 flex align-center justify-center arrow mr-6">
+          <div
+            className="bg-black w-16 h-16 flex align-center justify-center arrow mr-6"
+            onClick={validateInputs}
+          >
             <img src={Arrow} className="h-6 w-6 m-auto" />
           </div>
         </form>

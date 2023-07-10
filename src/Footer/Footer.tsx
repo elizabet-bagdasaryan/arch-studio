@@ -7,7 +7,7 @@ function Header() {
     <>
       <div className="p-6 bg-graylight mt-28 footer ">
         <img src={LogoFooter} className="foot-logo"></img>
-        <div className="text-gray font-bold text-center navbar">
+        <div className="text-gray font-bold text-center navbar-footer">
           <Link to="/home">
             <p>Home</p>
           </Link>
@@ -18,10 +18,12 @@ function Header() {
             <p>Contact</p>
           </Link>
         </div>
-        <div className="bg-black flex p-6 justify-evenly  w-64  m-auto ">
-          <p className="text-white font-bold ">See Our Portfolio </p>
-          <img src={Arrow} />
-        </div>
+        <Link to="/portfolio">
+          <div className="bg-black flex p-6 justify-evenly  w-64  m-auto ">
+            <p className="text-white font-bold ">See Our Portfolio </p>
+            <img src={Arrow} />
+          </div>
+        </Link>
       </div>
     </>
   );

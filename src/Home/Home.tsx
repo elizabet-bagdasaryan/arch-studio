@@ -20,10 +20,12 @@ function Home() {
             Project made for an art museum near Southwest London. Project
             Paramour is a statement of bold, modern architecture.
           </p>
-          <div className="bg-black flex p-6 justify-evenly w-64 ">
-            <p className="text-white font-bold ">See Our Portfolio </p>
-            <img src={Arrow} />
-          </div>
+          <Link to="/portfolio">
+            <div className="bg-black flex p-6 justify-evenly w-64 ">
+              <p className="text-white font-bold ">See Our Portfolio </p>
+              <img src={Arrow} />
+            </div>
+          </Link>
         </div>
       </div>
       <hr className="w-10 h-0.5 bg-black opacity-20 my-12 mx-6" />

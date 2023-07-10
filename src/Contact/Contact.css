@@ -13,11 +13,6 @@
   margin-top: 60px;
 }
 
-input {
-  border-bottom: 1px black solid;
-  width: 100%;
-}
-
 .connect {
   margin-top: 100px;
 }
@@ -27,19 +22,44 @@ input {
 
 .container {
   position: relative;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px black solid;
+  padding-left: 20px;
+}
+div.error {
+  position: relative;
+  margin-bottom: 40px;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #df5656;
 }
 
+div.error input::placeholder {
+  position: absolute;
+  font-weight: 600;
+  font-size: 20px;
+  color: #df5656;
+  opacity: 50%;
+}
+
+span.error {
+  color: #df5656;
+  font-weight: 600;
+  font-size: 12px;
+}
 .container input::placeholder {
   position: absolute;
 
   font-weight: 600;
   font-size: 20px;
-  padding-left: 20px;
 }
 
 input:focus {
   outline: none;
+  font-weight: 600;
+  color: #1b1d23;
 }
 
 .arrow {
