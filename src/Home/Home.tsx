@@ -5,6 +5,7 @@ import Ideas from "../assets/ideas.png";
 import Desol from "../assets/desol.png";
 import Tower from "../assets/tower.png";
 import Prototype from "../assets/prototype.png";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -27,7 +28,7 @@ function Home() {
       </div>
       <hr className="w-10 h-0.5 bg-black opacity-20 my-12 mx-6" />
       <div className="px-6 ">
-        <h2 className="font-bold text-5xl ">
+        <h2 className="font-bold text-5xl text-black">
           Welcome to <br />
           Arch Studio
         </h2>
@@ -92,12 +93,14 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="mx-6">
-        <div className="bg-black flex p-6 justify-evenly  w-full  m-auto ">
-          <p className="text-white font-bold ">See All </p>
-          <img src={Arrow} />
+      <Link to="/portfolio">
+        <div className="mx-6">
+          <div className="bg-black flex p-6 justify-evenly  w-full  m-auto ">
+            <p className="text-white font-bold ">See All </p>
+            <img src={Arrow} />
+          </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }

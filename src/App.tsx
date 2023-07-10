@@ -11,6 +11,7 @@ import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Contact from "./Contact/Contact";
 import About from "./About/About";
+import Portfolio from "./Portfolio/Portfolio";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
