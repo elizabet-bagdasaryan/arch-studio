@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <>
-      <div className="p-6 bg-graylight mt-28 footer ">
+      <div className=" bg-graylight mt-28 footer ">
         <img src={LogoFooter} className="foot-logo"></img>
         <div className="text-gray font-bold text-center navbar-footer">
           <Link to="/home">
-            <p>Home</p>
+            <p>Portfolio</p>
           </Link>
           <Link to="/about">
             <p>About Us</p>
@@ -19,7 +19,7 @@ function Header() {
           </Link>
         </div>
         <Link to="/portfolio">
-          <div className="bg-black flex p-6 justify-evenly  w-64  m-auto ">
+          <div className="bg-black flex p-6 justify-evenly  w-64  m-auto portfolio-foot">
             <p className="text-white font-bold ">See Our Portfolio </p>
             <img src={Arrow} />
           </div>

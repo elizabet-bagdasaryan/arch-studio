@@ -9,10 +9,10 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="overflow-x-hidden">
-      <div className="relative">
+    <div className="overflow-x-hidden home">
+      <div className="relative param">
         <img src={Building} className="w-full"></img>
-        <div className="absolute bottom-0 top-20  w-full px-6">
+        <div className="absolute bottom-0 top-20  w-full px-6 " id="param-text">
           <h2 className="text-white font-bold text-5xl mb-4 w-10">
             Project Paramour
           </h2>
@@ -29,7 +29,8 @@ function Home() {
         </div>
       </div>
       <hr className="w-10 h-0.5 bg-black opacity-20 my-12 mx-6" />
-      <div className="px-6 ">
+      <div className="px-6 welcome">
+        <h1 className="text-graylight font-bold">Welcome</h1>
         <h2 className="font-bold text-5xl text-black">
           Welcome to <br />
           Arch Studio
@@ -71,16 +72,16 @@ function Home() {
         <div className="relative mb-6">
           <img src={Desol} className="w-full"></img>
           <div className="absolute bottom-0  w-full px-6 py-4">
-            <h2 className="text-white font-bold text-3xl mb-2 ">
+            <h3 className="text-white font-bold text-3xl mb-2 ">
               Project Del Sol
-            </h2>
+            </h3>
             <p className="text-white"> View All Projects</p>
           </div>
         </div>
         <div className="relative mb-6">
           <img src={Tower} className="w-full"></img>
           <div className="absolute bottom-0  w-full px-6  py-4">
-            <h2 className="text-white font-bold text-3xl mb-2 "> 228B Tower</h2>
+            <h3 className="text-white font-bold text-3xl mb-2 "> 228B Tower</h3>
             <p className="text-white"> View All Projects</p>
           </div>
         </div>
@@ -88,9 +89,9 @@ function Home() {
         <div className="relative mb-6">
           <img src={Prototype} className="w-full"></img>
           <div className="absolute bottom-0  w-full px-6  py-4">
-            <h2 className="text-white font-bold text-3xl mb-2 ">
+            <h3 className="text-white font-bold text-3xl mb-2 ">
               Le Prototype
-            </h2>
+            </h3>
             <p className="text-white"> View All Projects</p>
           </div>
         </div>

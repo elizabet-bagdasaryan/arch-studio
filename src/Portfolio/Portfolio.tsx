@@ -29,7 +29,7 @@ function Portfolio() {
           <img src={Building} className="w-full"></img>
           <div className="absolute bottom-0  w-full px-6 py-4">
             <h2 className="text-white font-bold text-3xl mb-2 ">
-              EEbox Building
+              Eebox Building
             </h2>
             <p className="text-white"> August 2017</p>
           </div>
