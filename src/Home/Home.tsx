@@ -2,9 +2,13 @@ import "./Home.css";
 import Building from "../assets/building.png";
 import Arrow from "../assets/arrow.png";
 import Ideas from "../assets/ideas.png";
+import IdeasTab from "../assets/ideas-tab.png";
 import Desol from "../assets/desol.png";
 import Tower from "../assets/tower.png";
 import Prototype from "../assets/prototype.png";
+import DesolTab from "../assets/desol-tablet.png";
+import TowerTab from "../assets/tower-tablet.png";
+import PrototypeTab from "../assets/prototype-tablet.png";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -54,8 +58,9 @@ function Home() {
         </p>
       </div>
       <div className="relative">
-        <img src={Ideas} className="w-full"></img>
-        <div className="absolute bottom-0 top-40  w-full px-6">
+        <img src={Ideas} className="w-full small-mob"></img>
+        <img src={IdeasTab} className="w-full small-tab"></img>
+        <div className="absolute bottom-0 top-40  w-full px-6" id="small-team">
           <h2 className="text-white font-bold text-5xl mb-8 ">
             Small team, <br />
             big ideas
@@ -67,11 +72,23 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="px-6 mt-16">
-        <h2 className="text-black font-bold text-5xl mb-8 ">Featured</h2>
+      <div className="px-6 mt-16" id="home-feat">
+        <div className="flex justify-between ">
+          <h2 className="text-black font-bold text-5xl mb-8 ">Featured</h2>
+          <Link to="/portfolio">
+            <div className="mx-6 see-all-tab">
+              <div className="bg-black flex p-6 justify-evenly  w-52 ">
+                <p className="text-white font-bold ">See All </p>
+                <img src={Arrow} />
+              </div>
+            </div>
+          </Link>
+        </div>
         <div className="relative mb-6">
-          <img src={Desol} className="w-full"></img>
-          <div className="absolute bottom-0  w-full px-6 py-4">
+          <img src={Desol} className="w-full mob"></img>
+          <img src={DesolTab} className="tab"></img>
+
+          <div className="absolute bottom-0  w-full px-6 py-4" id="home-div">
             <h3 className="text-white font-bold text-3xl mb-2 ">
               Project Del Sol
             </h3>
@@ -79,16 +96,18 @@ function Home() {
           </div>
         </div>
         <div className="relative mb-6">
-          <img src={Tower} className="w-full"></img>
-          <div className="absolute bottom-0  w-full px-6  py-4">
+          <img src={Tower} className="w-full mob"></img>
+          <img src={TowerTab} className="tab"></img>
+          <div className="absolute bottom-0  w-full px-6  py-4" id="home-div">
             <h3 className="text-white font-bold text-3xl mb-2 "> 228B Tower</h3>
             <p className="text-white"> View All Projects</p>
           </div>
         </div>
 
         <div className="relative mb-6">
-          <img src={Prototype} className="w-full"></img>
-          <div className="absolute bottom-0  w-full px-6  py-4">
+          <img src={Prototype} className="w-full mob"></img>
+          <img src={PrototypeTab} className="tab"></img>
+          <div className="absolute bottom-0  w-full px-6  py-4" id="home-div">
             <h3 className="text-white font-bold text-3xl mb-2 ">
               Le Prototype
             </h3>
@@ -97,7 +116,7 @@ function Home() {
         </div>
       </div>
       <Link to="/portfolio">
-        <div className="mx-6">
+        <div className="mx-6 see-all-mob">
           <div className="bg-black flex p-6 justify-evenly  w-full  m-auto ">
             <p className="text-white font-bold ">See All </p>
             <img src={Arrow} />

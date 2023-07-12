@@ -1,7 +1,13 @@
 .welcome h1 {
   display: none;
 }
+.see-all-tab {
+  display: none;
+}
 
+.small-tab {
+  display: none;
+}
 @media (min-width: 768px) {
   .home {
     padding: 10vw;
@@ -30,6 +36,40 @@
     margin-bottom: 200px;
   }
   hr {
+    display: none;
+  }
+
+  .see-all-mob {
+    display: none;
+  }
+
+  .see-all-tab {
+    display: block;
+  }
+  #home-div {
+    padding: 4vw;
+  }
+  #home-feat {
+    padding: 0;
+  }
+  #home-feat h2 {
+    margin-bottom: 70px;
+  }
+  #small-team h2 {
+    font-size: 96px;
+    margin-top: 8vw;
+    margin-bottom: 60px;
+  }
+  #small-team {
+    padding: 0 70px;
+  }
+
+  .small-tab {
+    display: block;
+    margin-bottom: 200px;
+  }
+
+  .small-mob {
     display: none;
   }
 }

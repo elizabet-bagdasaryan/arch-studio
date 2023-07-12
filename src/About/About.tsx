@@ -4,13 +4,16 @@ import Jake from "../assets/jake.png";
 import Thompson from "../assets/thompson.png";
 import Jackson from "../assets/jackson.png";
 import Maria from "../assets/maria.png";
+import MacbookTab from "../assets/macbook-tab.png";
 
 function About() {
   return (
-    <>
-      <div className="relative">
-        <img src={Macbook} className="w-full" />
-        <div className="absolute bg-white team p-6 py-16 ">
+    <div className="about">
+      <div className="relative ">
+        <img src={Macbook} className="w-full mac-mob" />
+        <img src={MacbookTab} className="w-full mac-tab" />
+        <div className="absolute bg-white team p-6 py-16 " id="team">
+          <h1 className="text-graylight font-bold">About</h1>
           <h2 className="font-bold text-4xl text-black">
             Your team of <br /> professionals
           </h2>
@@ -44,34 +47,32 @@ function About() {
           project.
         </p>
       </div>
-
+      <h2 className="font-bold text-4xl text-black mt-28 mb-14 px-6">
+        The <br /> Leaders
+      </h2>
       <div className="px-6 leaders">
-        <h2 className="font-bold text-4xl text-black mt-28 mb-14">
-          The <br /> Leaders
-        </h2>
-
         <div>
-          <img src={Jake} className="w-full"></img>
+          <img src={Jake} className="w-full jake"></img>
           <h3 className="font-bold text-2xl text-black mt-4">Jake Richards</h3>
           <p className="text-black opacity-75 font-bold">Chief Architect</p>
         </div>
         <div>
-          <img src={Thompson} className="w-full"></img>
+          <img src={Thompson} className="w-full thompson"></img>
           <h3 className="font-bold text-2xl text-black mt-4">Thompson Smith</h3>
           <p className="text-black opacity-75 font-bold">Head of Finance</p>
         </div>
         <div>
-          <img src={Jackson} className="w-full"></img>
+          <img src={Jackson} className="w-full jackson"></img>
           <h3 className="font-bold text-2xl text-black mt-4">Jackson Rourke</h3>
           <p className="text-black opacity-75 font-bold">Lead Designer</p>
         </div>
         <div>
-          <img src={Maria} className="w-full"></img>
+          <img src={Maria} className="w-full maria"></img>
           <h3 className="font-bold text-2xl text-black mt-4">Maria Simpson</h3>
           <p className="text-black opacity-75 font-bold">Senior Architect</p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

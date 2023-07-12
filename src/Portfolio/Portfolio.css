@@ -1,0 +1,14 @@
+.tab {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mob {
+    display: none;
+  }
+
+  .tab {
+    display: block;
+    width: 100%;
+  }
+}

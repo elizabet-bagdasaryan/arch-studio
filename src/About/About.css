@@ -11,3 +11,73 @@
 .leaders img {
   margin-top: 60px;
 }
+.mac-tab {
+  display: none;
+}
+.about h1 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding: 10vw;
+  }
+  .mac-tab {
+    display: block;
+  }
+  .mac-mob {
+    display: none;
+  }
+  .about h1 {
+    display: block;
+    font-size: 120px;
+    margin-top: 80px;
+  }
+  #team {
+    margin-top: -600px;
+    right: 0;
+    width: 70vw;
+    padding-bottom: 10vw;
+    padding-left: 6vw;
+  }
+
+  .team p {
+    width: 58vw;
+  }
+  .about h2 {
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .leaders {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 40px 20px;
+    grid-auto-flow: row;
+  }
+
+  .pick {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .price {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .jake {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .thompson {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .jackson {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .maria {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+}

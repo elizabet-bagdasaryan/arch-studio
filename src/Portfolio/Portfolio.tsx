@@ -12,12 +12,26 @@ import Sxiv from "../assets/sxiv.png";
 import Trinity from "../assets/trinity.png";
 import Paramour from "../assets/paramour.png";
 
+import DesolTab from "../assets/desol-tablet.png";
+import TowerTab from "../assets/tower-tablet.png";
+import PrototypeTab from "../assets/prototype-tablet.png";
+import StationTab from "../assets/sttaion-tab.png";
+import BuildingTab from "../assets/eebox-tablet.png";
+import FederalTab from "../assets/federal-tablet.png";
+import GrandTab from "../assets/grand-tablet.png";
+import NetcryTab from "../assets/netcry-tablet.png";
+import HypersTab from "../assets/hypers-tablet.png";
+import SxivTab from "../assets/sxiv-tablet.png";
+import TrinityTab from "../assets/trinity-tablet.png";
+import ParamourTab from "../assets/paramour-tablet.jpg";
+
 function Portfolio() {
   return (
     <>
       <div className="px-6">
         <div className="relative mb-6">
-          <img src={Station} className="w-full"></img>
+          <img src={Station} className="w-full mob"></img>
+          <img src={StationTab} className="tab"></img>
           <div className="absolute bottom-0  w-full px-6 py-4">
             <h2 className="text-white font-bold text-3xl mb-2 ">
               Seraph Station
@@ -26,7 +40,8 @@ function Portfolio() {
           </div>
         </div>
         <div className="relative mb-6">
-          <img src={Building} className="w-full"></img>
+          <img src={Building} className="w-full  mob"></img>
+          <img src={BuildingTab} className="tab"></img>
           <div className="absolute bottom-0  w-full px-6 py-4">
             <h2 className="text-white font-bold text-3xl mb-2 ">
               Eebox Building
@@ -35,7 +50,8 @@ function Portfolio() {
           </div>
         </div>
         <div className="relative mb-6">
-          <img src={Federal} className="w-full"></img>
+          <img src={Federal} className="w-full mob"></img>
+          <img src={FederalTab} className="tab"></img>
           <div className="absolute bottom-0  w-full px-6 py-4">
             <h2 className="text-white font-bold text-3xl mb-2 ">
               Federal II Tower
@@ -44,7 +60,8 @@ function Portfolio() {
           </div>
         </div>
         <div className="relative mb-6">
-          <img src={Desol} className="w-full"></img>
+          <img src={Desol} className="w-full mob"></img>
+          <img src={DesolTab} className="tab"></img>
           <div className="absolute bottom-0  w-full px-6 py-4">
             <h2 className="text-white font-bold text-3xl mb-2 ">
               Project Del Sol
@@ -54,7 +71,8 @@ function Portfolio() {
         </div>
 
         <div className="relative mb-6">
-          <img src={Prototype} className="w-full"></img>
+          <img src={Prototype} className="w-full mob"></img>
+          <img src={PrototypeTab} className="tab"></img>
           <div className="absolute bottom-0  w-full px-6  py-4">
             <h2 className="text-white font-bold text-3xl mb-2 ">
               Le Prototype
@@ -64,7 +82,8 @@ function Portfolio() {
         </div>
 
         <div className="relative mb-6">
-          <img src={Tower} className="w-full"></img>
+          <img src={Tower} className="w-full mob"></img>
+          <img src={TowerTab} className="tab"></img>
           <div className="absolute bottom-0  w-full px-6  py-4">
             <h2 className="text-white font-bold text-3xl mb-2 "> 228B Tower</h2>
             <p className="text-white"> April 2015</p>
@@ -72,7 +91,8 @@ function Portfolio() {
         </div>
 
         <div className="relative mb-6">
-          <img src={Grand} className="w-full"></img>
+          <img src={Grand} className="w-full mob"></img>
+          <img src={GrandTab} className="tab"></img>
           <div className="absolute bottom-0  w-full px-6 py-4">
             <h2 className="text-white font-bold text-3xl mb-2 ">
               Grand Edelweiss Hotel
@@ -82,7 +102,8 @@ function Portfolio() {
         </div>
 
         <div className="relative mb-6">
-          <img src={Netcry} className="w-full"></img>
+          <img src={Netcry} className="w-full mob"></img>
+          <img src={NetcryTab} className="tab"></img>
           <div className="absolute bottom-0  w-full px-6 py-4">
             <h2 className="text-white font-bold text-3xl mb-2 ">
               Netcry Tower
@@ -92,7 +113,8 @@ function Portfolio() {
         </div>
 
         <div className="relative mb-6">
-          <img src={Hypers} className="w-full"></img>
+          <img src={Hypers} className="w-full mob"></img>
+          <img src={HypersTab} className="tab"></img>
           <div className="absolute bottom-0  w-full px-6 py-4">
             <h2 className="text-white font-bold text-3xl mb-2 ">Hypers</h2>
             <p className="text-white"> January 2012</p>
@@ -100,7 +122,8 @@ function Portfolio() {
         </div>
 
         <div className="relative mb-6">
-          <img src={Sxiv} className="w-full"></img>
+          <img src={Sxiv} className="w-full mob"></img>
+          <img src={SxivTab} className="tab"></img>
           <div className="absolute bottom-0  w-full px-6 py-4">
             <h2 className="text-white font-bold text-3xl mb-2 ">SXIV Tower</h2>
             <p className="text-white"> March 2011</p>
@@ -108,7 +131,8 @@ function Portfolio() {
         </div>
 
         <div className="relative mb-6">
-          <img src={Trinity} className="w-full"></img>
+          <img src={Trinity} className="w-full mob"></img>
+          <img src={TrinityTab} className="tab"></img>
           <div className="absolute bottom-0  w-full px-6 py-4">
             <h2 className="text-white font-bold text-3xl mb-2 ">
               Trinity Bank Tower
@@ -118,7 +142,8 @@ function Portfolio() {
         </div>
 
         <div className="relative mb-6">
-          <img src={Paramour} className="w-full"></img>
+          <img src={Paramour} className="w-full mob"></img>
+          <img src={ParamourTab} className="tab"></img>
           <div className="absolute bottom-0  w-full px-6 py-4">
             <h2 className="text-white font-bold text-3xl mb-2 ">
               Project Paramour

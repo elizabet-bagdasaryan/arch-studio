@@ -8,7 +8,7 @@ function Header() {
       <div className=" bg-graylight mt-28 footer ">
         <img src={LogoFooter} className="foot-logo"></img>
         <div className="text-gray font-bold text-center navbar-footer">
-          <Link to="/home">
+          <Link to="/portfolio">
             <p>Portfolio</p>
           </Link>
           <Link to="/about">
