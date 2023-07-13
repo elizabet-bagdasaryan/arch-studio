@@ -68,6 +68,10 @@ input:focus {
   right: 0;
 }
 
+.map-desk {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .offices {
     display: flex;
@@ -82,5 +86,34 @@ input:focus {
   }
   #form-arrow {
     margin-right: 13vw;
+  }
+}
+
+@media (min-width: 1336px) {
+  .details {
+    display: flex;
+    justify-content: space-between;
+  }
+  .offices {
+    display: block;
+    margin-top: -2vw;
+  }
+  .offices img {
+    position: relative;
+    margin-top: 80px;
+  }
+  .map-mob {
+    display: none;
+  }
+  .map-desk {
+    display: block;
+  }
+  .connect {
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  form {
+    margin-left: 12.4%;
+    width: 70%;
   }
 }

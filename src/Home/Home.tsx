@@ -9,6 +9,10 @@ import Prototype from "../assets/prototype.png";
 import DesolTab from "../assets/desol-tablet.png";
 import TowerTab from "../assets/tower-tablet.png";
 import PrototypeTab from "../assets/prototype-tablet.png";
+
+import DesolDesk from "../assets/desol-desk.jpg";
+import TowerDesk from "../assets/tower-desk.png";
+import PrototypeDesk from "../assets/prototype-desk.png";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -60,6 +64,7 @@ function Home() {
       <div className="relative">
         <img src={Ideas} className="w-full small-mob"></img>
         <img src={IdeasTab} className="w-full small-tab"></img>
+
         <div className="absolute bottom-0 top-40  w-full px-6" id="small-team">
           <h2 className="text-white font-bold text-5xl mb-8 ">
             Small team, <br />
@@ -84,34 +89,41 @@ function Home() {
             </div>
           </Link>
         </div>
-        <div className="relative mb-6">
-          <img src={Desol} className="w-full mob"></img>
-          <img src={DesolTab} className="tab"></img>
-
-          <div className="absolute bottom-0  w-full px-6 py-4" id="home-div">
-            <h3 className="text-white font-bold text-3xl mb-2 ">
-              Project Del Sol
-            </h3>
-            <p className="text-white"> View All Projects</p>
+        <div className="projects">
+          <div className="relative mb-6">
+            <img src={Desol} className="w-full mob"></img>
+            <img src={DesolTab} className="tab"></img>
+            <img src={DesolDesk} className="desk"></img>
+            <div className="absolute bottom-0  w-full px-6 py-4" id="home-div">
+              <h3 className="text-white font-bold text-3xl mb-2 ">
+                Project Del Sol
+              </h3>
+              <p className="text-white"> View All Projects</p>
+            </div>
           </div>
-        </div>
-        <div className="relative mb-6">
-          <img src={Tower} className="w-full mob"></img>
-          <img src={TowerTab} className="tab"></img>
-          <div className="absolute bottom-0  w-full px-6  py-4" id="home-div">
-            <h3 className="text-white font-bold text-3xl mb-2 "> 228B Tower</h3>
-            <p className="text-white"> View All Projects</p>
+          <div className="relative mb-6">
+            <img src={Tower} className="w-full mob"></img>
+            <img src={TowerTab} className="tab"></img>
+            <img src={TowerDesk} className="desk"></img>
+            <div className="absolute bottom-0  w-full px-6  py-4" id="home-div">
+              <h3 className="text-white font-bold text-3xl mb-2 ">
+                {" "}
+                228B Tower
+              </h3>
+              <p className="text-white"> View All Projects</p>
+            </div>
           </div>
-        </div>
 
-        <div className="relative mb-6">
-          <img src={Prototype} className="w-full mob"></img>
-          <img src={PrototypeTab} className="tab"></img>
-          <div className="absolute bottom-0  w-full px-6  py-4" id="home-div">
-            <h3 className="text-white font-bold text-3xl mb-2 ">
-              Le Prototype
-            </h3>
-            <p className="text-white"> View All Projects</p>
+          <div className="relative mb-6">
+            <img src={Prototype} className="w-full mob"></img>
+            <img src={PrototypeTab} className="tab"></img>
+            <img src={PrototypeDesk} className="desk"></img>
+            <div className="absolute bottom-0  w-full px-6  py-4" id="home-div">
+              <h3 className="text-white font-bold text-3xl mb-2 ">
+                Le Prototype
+              </h3>
+              <p className="text-white"> View All Projects</p>
+            </div>
           </div>
         </div>
       </div>

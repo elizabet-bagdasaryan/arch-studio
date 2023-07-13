@@ -22,7 +22,7 @@ function Header() {
   }, []);
 
   return (
-    <>
+    <div className="header-wrap">
       <div className="header">
         <Link to="/home">
           <img src={Logo} className="arch" />
@@ -57,7 +57,7 @@ function Header() {
           <p>Contact</p>
         </Link>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -5,6 +5,7 @@ import Map from "../assets/map.png";
 import View from "../assets/view.png";
 import Arrow from "../assets/arrow.png";
 import { useState } from "react";
+import MapDesk from "../assets/map-desk.png";
 function Contact() {
   const [name, setName] = useState("");
   const [nameError, setNameError] = useState(false);
@@ -50,7 +51,7 @@ function Contact() {
     <div className="about">
       <div className="relative ">
         <img src={Phone} className="w-full mac-mob" />
-        <img src={PhoneTab} className="w-full mac-tab" />
+        <img src={PhoneTab} className=" mac-tab" />
         <div className="absolute bg-white team p-6 py-16 text-black" id="team">
           <h1 className="text-graylight font-bold">Contact</h1>
           <h2 className="font-bold text-4xl ">
@@ -94,7 +95,8 @@ function Contact() {
           <img src={View} />
         </div>
       </div>
-      <img src={Map} className="w-full mt-20"></img>
+      <img src={Map} className="w-full mt-20 map-mob"></img>
+      <img src={MapDesk} className="w-full mt-20 map-desk"></img>
 
       <div className="px-6 connect">
         <h2 className="font-bold text-4xl text-black ">

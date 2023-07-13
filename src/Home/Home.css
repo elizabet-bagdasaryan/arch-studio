@@ -10,7 +10,7 @@
 }
 @media (min-width: 768px) {
   .home {
-    padding: 10vw;
+    padding: 0 10vw;
   }
 
   .home h2 {
@@ -71,5 +71,17 @@
 
   .small-mob {
     display: none;
+  }
+}
+
+@media (min-width: 1336px) {
+  .projects {
+    display: flex;
+  }
+  .projects div {
+    width: 100%;
+  }
+  .projects div:nth-child(2) {
+    margin: 0 2vw;
   }
 }
