@@ -9,17 +9,20 @@ import Prototype from "../assets/prototype.png";
 import DesolTab from "../assets/desol-tablet.png";
 import TowerTab from "../assets/tower-tablet.png";
 import PrototypeTab from "../assets/prototype-tablet.png";
-
+import HomeDesk from "../assets/home-desk.png";
+import IdeasDesk from "../assets/ideas-desk.png";
 import DesolDesk from "../assets/desol-desk.jpg";
 import TowerDesk from "../assets/tower-desk.png";
 import PrototypeDesk from "../assets/prototype-desk.png";
 import { Link } from "react-router-dom";
+import Welcome from "../assets/welcome.png";
 
 function Home() {
   return (
     <div className="overflow-x-hidden home">
       <div className="relative param">
-        <img src={Building} className="w-full"></img>
+        <img src={Building} className="w-full mob-build"></img>
+        <img src={HomeDesk} className="w-full desk"></img>
         <div className="absolute bottom-0 top-20  w-full px-6 " id="param-text">
           <h2 className="text-white font-bold text-5xl mb-4 w-10">
             Project Paramour
@@ -38,33 +41,36 @@ function Home() {
       </div>
       <hr className="w-10 h-0.5 bg-black opacity-20 my-12 mx-6" />
       <div className="px-6 welcome">
-        <h1 className="text-graylight font-bold">Welcome</h1>
-        <h2 className="font-bold text-5xl text-black">
-          Welcome to <br />
-          Arch Studio
-        </h2>
-        <p className="my-6 text-gray font-bold leading-7">
-          We have a unique network and skillset to help bring your projects to
-          life. Our small team of highly skilled individuals combined with our
-          large network put us in a strong position to deliver exceptional
-          results.
-        </p>
-        <p className="my-6 text-gray font-bold leading-7">
-          Over the past 10 years, we have worked on all kinds of projects. From
-          stations to high-rise buildings, we create spaces that inspire and
-          delight.
-        </p>
-        <p className="my-6 text-gray font-bold leading-7">
-          We work closely with our clients so that we understand the intricacies
-          of each project. This allows us to work in harmony the surrounding
-          area to create truly stunning projects that will stand the test of
-          time.
-        </p>
+        <div>
+          <h1 className="text-graylight font-bold">Welcome</h1>
+          <h2 className="font-bold text-5xl text-black">
+            Welcome to <br />
+            Arch Studio
+          </h2>
+          <p className="my-6 text-gray font-bold leading-7">
+            We have a unique network and skillset to help bring your projects to
+            life. Our small team of highly skilled individuals combined with our
+            large network put us in a strong position to deliver exceptional
+            results.
+          </p>
+          <p className="my-6 text-gray font-bold leading-7">
+            Over the past 10 years, we have worked on all kinds of projects.
+            From stations to high-rise buildings, we create spaces that inspire
+            and delight.
+          </p>
+          <p className="my-6 text-gray font-bold leading-7">
+            We work closely with our clients so that we understand the
+            intricacies of each project. This allows us to work in harmony the
+            surrounding area to create truly stunning projects that will stand
+            the test of time.
+          </p>
+        </div>
+        <img src={Welcome} />
       </div>
       <div className="relative">
         <img src={Ideas} className="w-full small-mob"></img>
         <img src={IdeasTab} className="w-full small-tab"></img>
-
+        <img src={IdeasDesk} className="w-full desk"></img>
         <div className="absolute bottom-0 top-40  w-full px-6" id="small-team">
           <h2 className="text-white font-bold text-5xl mb-8 ">
             Small team, <br />

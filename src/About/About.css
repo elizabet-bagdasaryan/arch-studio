@@ -122,13 +122,15 @@
     margin-top: -42vw;
     right: 0;
     width: 40vw;
-    padding-bottom: 10vw;
+    padding-bottom: 12vw;
     padding-top: 15vw;
   }
 
   #team p {
     padding-right: 30vw;
     margin: 4vw 0;
+    font-size: 22px;
+    line-height: 40px;
   }
   .mac-tab {
     width: 50vw;

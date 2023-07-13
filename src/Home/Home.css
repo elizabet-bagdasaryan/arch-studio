@@ -8,6 +8,9 @@
 .small-tab {
   display: none;
 }
+.welcome img {
+  display: none;
+}
 @media (min-width: 768px) {
   .home {
     padding: 0 10vw;
@@ -83,5 +86,24 @@
   }
   .projects div:nth-child(2) {
     margin: 0 2vw;
+  }
+  .small-tab {
+    display: none;
+  }
+  .welcome img {
+    display: block;
+  }
+  .welcome {
+    display: flex;
+  }
+  .mob-build {
+    display: none;
+  }
+  .param h2 {
+    margin-top: 8vw;
+  }
+
+  #small-team h2 {
+    margin-top: 3vw;
   }
 }

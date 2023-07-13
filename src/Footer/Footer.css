@@ -45,3 +45,9 @@
     top: 20%;
   }
 }
+
+@media (min-width: 1336px) {
+  .foot-wrap {
+    padding: 0 10vw;
+  }
+}

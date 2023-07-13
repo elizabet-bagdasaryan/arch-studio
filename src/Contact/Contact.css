@@ -97,7 +97,10 @@ input:focus {
   .offices {
     display: block;
     margin-top: -2vw;
+    font-size: 22px;
+    line-height: 40px;
   }
+
   .offices img {
     position: relative;
     margin-top: 80px;
@@ -110,10 +113,9 @@ input:focus {
   }
   .connect {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
   }
   form {
-    margin-left: 12.4%;
-    width: 70%;
+    width: 100%;
   }
 }
