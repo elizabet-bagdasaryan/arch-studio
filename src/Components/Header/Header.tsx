@@ -1,6 +1,6 @@
 import "./Header.css";
-import Logo from "../assets/Arch.svg";
-import Hamburger from "../assets/hamburger.svg";
+import Logo from "../../assets/Arch.svg";
+import Hamburger from "../../assets/hamburger.svg";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 function Header() {
@@ -25,7 +25,7 @@ function Header() {
     <div className="header-wrap">
       <div className="header">
         <Link to="/home">
-          <img src={Logo} className="arch" />
+          <img src={Logo} className="arch" alt="Logo" />
         </Link>
         <img
           src={Hamburger}

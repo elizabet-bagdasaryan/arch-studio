@@ -1,11 +1,13 @@
 import "./About.css";
-import Macbook from "../assets/macbook.png";
-import Jake from "../assets/jake.png";
-import Thompson from "../assets/thompson.png";
-import Jackson from "../assets/jackson.png";
-import Maria from "../assets/maria.png";
-import MacbookTab from "../assets/macbook-tab.png";
-import Heritage from "../assets/heritage.png";
+import Macbook from "../../assets/macbook.png";
+import Jake from "../../assets/jake.png";
+import Thompson from "../../assets/thompson.png";
+import Jackson from "../../assets/jackson.png";
+import Maria from "../../assets/maria.png";
+import MacbookTab from "../../assets/macbook-tab.png";
+import Heritage from "../../assets/heritage.png";
+import Linkedin from "../../assets/linkedin.svg";
+import Twitter from "../../assets/twitter.svg";
 
 function About() {
   return (
@@ -57,28 +59,52 @@ function About() {
         </h2>
         <div className="px-6 leaders">
           <div>
-            <img src={Jake} className="w-full jake"></img>
+            <div className="image-container">
+              <img src={Jake} />
+              <div className="overlay ">
+                <img className="icon1" src={Linkedin} />
+                <img className="icon2" src={Twitter} />
+              </div>
+            </div>
             <h3 className="font-bold text-2xl text-black mt-4">
               Jake Richards
             </h3>
             <p className="text-black opacity-75 font-bold">Chief Architect</p>
           </div>
           <div>
-            <img src={Thompson} className="w-full thompson"></img>
+            <div className="image-container">
+              <img src={Thompson} />
+              <div className="overlay ">
+                <img className="icon1" src={Linkedin} />
+                <img className="icon2" src={Twitter} />
+              </div>
+            </div>
             <h3 className="font-bold text-2xl text-black mt-4">
               Thompson Smith
             </h3>
             <p className="text-black opacity-75 font-bold">Head of Finance</p>
           </div>
           <div>
-            <img src={Jackson} className="w-full jackson"></img>
+            <div className="image-container">
+              <img src={Jackson} />
+              <div className="overlay ">
+                <img className="icon1" src={Linkedin} />
+                <img className="icon2" src={Twitter} />
+              </div>
+            </div>
             <h3 className="font-bold text-2xl text-black mt-4">
               Jackson Rourke
             </h3>
             <p className="text-black opacity-75 font-bold">Lead Designer</p>
           </div>
           <div>
-            <img src={Maria} className="w-full maria"></img>
+            <div className="image-container">
+              <img src={Maria} />
+              <div className="overlay ">
+                <img className="icon1" src={Linkedin} />
+                <img className="icon2" src={Twitter} />
+              </div>
+            </div>
             <h3 className="font-bold text-2xl text-black mt-4">
               Maria Simpson
             </h3>

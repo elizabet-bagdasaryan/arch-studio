@@ -63,7 +63,9 @@
   .navbar-footer {
     justify-content: space-around;
   }
-
+  .navbar-footer p {
+    font-weight: 900;
+  }
   .navbar-footer p:hover {
     color: #1b1d23;
   }

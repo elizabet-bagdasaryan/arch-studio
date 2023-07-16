@@ -1,11 +1,11 @@
 import "./Contact.css";
-import Phone from "../assets/phone.png";
-import PhoneTab from "../assets/phone-tab.png";
-import Map from "../assets/map.png";
-import View from "../assets/view.png";
-import Arrow from "../assets/arrow.png";
+import Phone from "../../assets/phone.png";
+import PhoneTab from "../../assets/phone-tab.png";
+import Map from "../../assets/map.png";
+import View from "../../assets/view.png";
+import Arrow from "../../assets/arrow.png";
 import { useState } from "react";
-import MapDesk from "../assets/map-desk.png";
+import MapDesk from "../../assets/map-desk.png";
 function Contact() {
   const [name, setName] = useState("");
   const [nameError, setNameError] = useState(false);
@@ -80,7 +80,12 @@ function Contact() {
               Phone : 123-456-3451
             </p>
           </div>
-          <img src={View} />
+          <div className="image-cont">
+            <a href="#">
+              <img src={View} />
+              <span className="underline"></span>
+            </a>
+          </div>
         </div>
         <div className="offices">
           <div>
@@ -92,18 +97,23 @@ function Contact() {
               Phone : 832-123-4321
             </p>
           </div>
-          <img src={View} />
+          <div className="image-cont">
+            <a href="#">
+              <img src={View} />
+              <span className="underline"></span>
+            </a>
+          </div>
         </div>
       </div>
       <img src={Map} className="w-full mt-20 map-mob"></img>
       <img src={MapDesk} className="w-full mt-20 map-desk"></img>
 
       <div className="px-6 connect">
-        <h2 className="font-bold text-4xl text-black ">
+        <h2 className="font-bold text-4xl text-black connect-with">
           {" "}
           Connect <br /> with us
         </h2>
-        <form>
+        <form className="connect-form">
           <div className={nameError ? "error" : "container"}>
             <input
               placeholder="Name"

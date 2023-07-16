@@ -6,12 +6,12 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import Home from "./Home/Home";
-import Header from "./Header/Header";
-import Footer from "./Footer/Footer";
-import Contact from "./Contact/Contact";
-import About from "./About/About";
-import Portfolio from "./Portfolio/Portfolio";
+import Home from "./Pages/Home/Home.tsx";
+import Header from "./Components/Header/Header.tsx";
+import Footer from "./Components/Footer/Footer.tsx";
+import Contact from "./Pages/Contact/Contact.tsx";
+import About from "./Pages/About/About.tsx";
+import Portfolio from "./Pages/Portfolio/Portfolio.tsx";
 
 function App() {
   return (

@@ -1,7 +1,8 @@
 import "./Footer.css";
-import LogoFooter from "../assets/logo-footer.png";
-import Arrow from "../assets/arrow.png";
+import LogoFooter from "../../assets/logo-footer.png";
+import Arrow from "../../assets/arrow.png";
 import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <div className="foot-wrap">
