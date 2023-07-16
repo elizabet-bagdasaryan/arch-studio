@@ -103,7 +103,10 @@ function Home() {
             {renderDescription()}
           </p>
           <Link to="/portfolio">
-            <div className="bg-black flex p-6 justify-evenly w-64" id="button">
+            <div
+              className="bg-black flex p-6 justify-evenly w-64 see"
+              id="button"
+            >
               <p className="text-white font-bold">See Our Portfolio </p>
               <img src={Arrow} />
             </div>
@@ -175,8 +178,8 @@ function Home() {
             big ideas
           </h2>
 
-          <div className="bg-black flex p-6 justify-evenly w-48 ">
-            <p className="text-white font-bold ">About Us </p>
+          <div className="bg-black flex p-6 justify-evenly w-48 see">
+            <p className="text-white font-bold see">About Us </p>
             <img src={Arrow} />
           </div>
         </div>
@@ -186,7 +189,7 @@ function Home() {
           <h2 className="text-black font-bold text-5xl mb-8 ">Featured</h2>
           <Link to="/portfolio">
             <div className="mx-6 see-all-tab">
-              <div className="bg-black flex p-6 justify-evenly  w-52 ">
+              <div className="bg-black flex p-6 justify-evenly  w-52  see">
                 <p className="text-white font-bold ">See All </p>
                 <img src={Arrow} />
               </div>
@@ -202,7 +205,7 @@ function Home() {
               <h3 className="text-white font-bold text-3xl mb-2 ">
                 Project Del Sol
               </h3>
-              <p className="text-white"> View All Projects</p>
+              <p className="text-white "> View All Projects</p>
             </div>
           </div>
           <div className="relative mb-6">

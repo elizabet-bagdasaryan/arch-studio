@@ -9,7 +9,7 @@ function Header() {
         <Link to="/home">
           <img src={LogoFooter} className="foot-logo"></img>
         </Link>
-        <div className="text-gray font-bold text-center navbar-footer">
+        <div className="text-grayfooter font-bold text-center navbar-footer">
           <Link to="/portfolio">
             <p>Portfolio</p>
           </Link>

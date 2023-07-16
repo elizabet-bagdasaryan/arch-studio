@@ -50,4 +50,28 @@
   .foot-wrap {
     padding: 0 10vw;
   }
+  .foot-wrap p {
+    font-size: 22px;
+  }
+  .portfolio-foot p {
+    font-size: 20px;
+  }
+  .footer {
+    justify-content: start;
+    width: 70vw;
+  }
+  .navbar-footer {
+    justify-content: space-around;
+  }
+
+  .navbar-footer p:hover {
+    color: #1b1d23;
+  }
+
+  .portfolio-foot {
+    left: 95%;
+  }
+  .portfolio-foot:hover {
+    background-color: #60636d;
+  }
 }

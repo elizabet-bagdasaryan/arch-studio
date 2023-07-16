@@ -91,4 +91,8 @@
   .portfolios div div {
     padding: 2vw;
   }
+  .portfolios img:hover {
+    opacity: 70%;
+    cursor: pointer;
+  }
 }

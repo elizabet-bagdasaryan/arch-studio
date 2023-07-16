@@ -176,4 +176,8 @@
     background-color: #1b1d23;
     color: white;
   }
+  .see:hover {
+    background-color: #60636d;
+    cursor: pointer;
+  }
 }

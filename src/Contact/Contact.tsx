@@ -136,7 +136,7 @@ function Contact() {
             {messageError && <span className="error">Can't be empty</span>}
           </div>
           <div
-            className="bg-black w-16 h-16 flex align-center justify-center arrow mr-6 "
+            className="bg-black w-16 h-16 flex align-center justify-center arrow mr-6 see"
             id="form-arrow"
             onClick={validateInputs}
           >
