@@ -6,7 +6,9 @@ function Header() {
   return (
     <div className="foot-wrap">
       <div className=" bg-graylight mt-28 footer ">
-        <img src={LogoFooter} className="foot-logo"></img>
+        <Link to="/home">
+          <img src={LogoFooter} className="foot-logo"></img>
+        </Link>
         <div className="text-gray font-bold text-center navbar-footer">
           <Link to="/portfolio">
             <p>Portfolio</p>

@@ -27,12 +27,12 @@ function Home() {
           <h2 className="text-white font-bold text-5xl mb-4 w-10">
             Project Paramour
           </h2>
-          <p className="text-white mb-16 w-80 leading-7">
+          <p className="text-white mb-16 w-80 leading-7 " id="paragraph">
             Project made for an art museum near Southwest London. Project
             Paramour is a statement of bold, modern architecture.
           </p>
           <Link to="/portfolio">
-            <div className="bg-black flex p-6 justify-evenly w-64 ">
+            <div className="bg-black flex p-6 justify-evenly w-64" id="button">
               <p className="text-white font-bold ">See Our Portfolio </p>
               <img src={Arrow} />
             </div>

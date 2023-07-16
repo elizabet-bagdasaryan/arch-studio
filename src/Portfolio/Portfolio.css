@@ -87,4 +87,8 @@
   .paramour {
     grid-area: paramour;
   }
+
+  .portfolios div div {
+    padding: 2vw;
+  }
 }

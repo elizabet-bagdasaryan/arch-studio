@@ -92,9 +92,13 @@
   }
   .welcome img {
     display: block;
+    width: 500px;
+    margin-top: 300px;
+    margin-left: 6vw;
   }
   .welcome {
     display: flex;
+    position: relative;
   }
   .mob-build {
     display: none;
@@ -105,5 +109,44 @@
 
   #small-team h2 {
     margin-top: 3vw;
+  }
+  .welcome {
+    justify-content: center;
+  }
+  .welcome p {
+    font-size: 18px;
+    width: 500px;
+    line-height: 40px;
+  }
+  .welcome h1 {
+    font-size: 250px;
+    position: absolute;
+    margin-left: -5vw;
+  }
+  .welcome h2 {
+    margin-top: 380px;
+  }
+  #home-div {
+    padding: 2vw;
+  }
+
+  #paragraph {
+    font-size: 24px;
+    line-height: 44px;
+    width: 40%;
+  }
+
+  #param-text {
+    padding: 4vw 18vw;
+  }
+
+  #param-text h2 {
+    font-size: 200px;
+  }
+  #button {
+    font-size: 24px;
+    margin-right: 70px;
+    width: 360px;
+    padding: 38px;
   }
 }
