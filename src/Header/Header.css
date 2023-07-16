@@ -80,9 +80,18 @@
 
 @media (min-width: 1336px) {
   .navbar p:hover {
-    opacity: 0.3;
+    color: #1b1d23;
     cursor: pointer;
   }
+  .header img {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-right: 10vw;
+  }
+
   .header {
+    justify-content: start;
+    font-size: 24px;
   }
 }

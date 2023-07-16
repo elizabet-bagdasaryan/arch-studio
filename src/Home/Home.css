@@ -11,6 +11,9 @@
 .welcome img {
   display: none;
 }
+.gallery {
+  display: none;
+}
 @media (min-width: 768px) {
   .home {
     padding: 0 10vw;
@@ -133,20 +136,44 @@
   #paragraph {
     font-size: 24px;
     line-height: 44px;
-    width: 40%;
+    width: 80%;
   }
 
   #param-text {
-    padding: 4vw 18vw;
+    padding: 0vw 8vw;
   }
 
-  #param-text h2 {
-    font-size: 200px;
+  #headers {
+    font-size: 5vw;
+    width: 50%;
   }
   #button {
-    font-size: 24px;
     margin-right: 70px;
-    width: 360px;
-    padding: 38px;
+    width: 400px;
+    padding: 24px;
+    font-size: 22px;
+  }
+  .gallery {
+    display: flex;
+    position: absolute;
+    margin-top: -3vw;
+
+    margin-left: -5.2vw;
+  }
+  .gallery p {
+    padding: 2vw;
+    font-size: 20px;
+    color: #7d828f;
+    background-color: white;
+    font-weight: 600;
+  }
+  .gallery p:hover {
+    background-color: #eeeff4;
+    cursor: pointer;
+  }
+
+  .gallery p.active {
+    background-color: #1b1d23;
+    color: white;
   }
 }

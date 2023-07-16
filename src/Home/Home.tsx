@@ -16,29 +16,127 @@ import TowerDesk from "../assets/tower-desk.png";
 import PrototypeDesk from "../assets/prototype-desk.png";
 import { Link } from "react-router-dom";
 import Welcome from "../assets/welcome.png";
+import { useState } from "react";
+import FederalHome from "../assets/federal-home.png";
+import StationHome from "../assets/station-home.png";
+import TrinityHome from "../assets/trinity-home.png";
+import { useEffect } from "react";
+
+interface Project {
+  src: string;
+  title: string;
+  description: string;
+}
+
+const images: { [key: number]: Project } = {
+  1: {
+    src: HomeDesk,
+    title: "Project Paramour",
+    description:
+      "Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.",
+  },
+  2: {
+    src: StationHome,
+    title: "Seraph Station",
+    description:
+      "The Seraph Station project challenged us to design a unique station that would transport people through time. The result is a fresh and futuristic model inspired by space stations.",
+  },
+  3: {
+    src: FederalHome,
+    title: "Federal II Tower",
+    description:
+      "A sequel theme project for a tower originally built in the 1800s. We achieved this with a striking look of brutal minimalism with modern touches.",
+  },
+  4: {
+    src: TrinityHome,
+    title: "Trinity Bank Tower",
+    description:
+      "Trinity Bank challenged us to make a concept for a 84 story building located in the middle of a city with a high earthquake frequency. For this project we used curves to blend design and stability to meet our objectives.",
+  },
+};
 
 function Home() {
+  const [selectedImage, setSelectedImage] = useState<number>(1);
+  const [isMobileView, setIsMobileView] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 1336);
+    };
+    window.addEventListener("resize", handleResize);
+
+    setIsMobileView(window.innerWidth <= 1336);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const handleClick = (imageNumber: number) => {
+    setSelectedImage(imageNumber);
+  };
+
+  const renderTitle = () => {
+    if (isMobileView) {
+      return "Project Paramour";
+    } else {
+      return images[selectedImage].title;
+    }
+  };
+
+  const renderDescription = () => {
+    if (isMobileView) {
+      return "Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.";
+    } else {
+      return images[selectedImage].description;
+    }
+  };
   return (
     <div className="overflow-x-hidden home">
       <div className="relative param">
         <img src={Building} className="w-full mob-build"></img>
-        <img src={HomeDesk} className="w-full desk"></img>
-        <div className="absolute bottom-0 top-20  w-full px-6 " id="param-text">
-          <h2 className="text-white font-bold text-5xl mb-4 w-10">
-            Project Paramour
+        <img src={images[selectedImage].src} className="w-full desk" />
+        <div className="absolute bottom-0 top-20 w-full px-6" id="param-text">
+          <h2 className="text-white font-bold text-5xl mb-4 w-10" id="headers">
+            {renderTitle()}
           </h2>
-          <p className="text-white mb-16 w-80 leading-7 " id="paragraph">
-            Project made for an art museum near Southwest London. Project
-            Paramour is a statement of bold, modern architecture.
+          <p className="text-white mb-16 w-80 leading-7" id="paragraph">
+            {renderDescription()}
           </p>
           <Link to="/portfolio">
             <div className="bg-black flex p-6 justify-evenly w-64" id="button">
-              <p className="text-white font-bold ">See Our Portfolio </p>
+              <p className="text-white font-bold">See Our Portfolio </p>
               <img src={Arrow} />
             </div>
           </Link>
         </div>
+        <div className="gallery">
+          <p
+            className={selectedImage === 1 ? "active" : ""}
+            onClick={() => handleClick(1)}
+          >
+            01
+          </p>
+          <p
+            className={selectedImage === 2 ? "active" : ""}
+            onClick={() => handleClick(2)}
+          >
+            02
+          </p>
+          <p
+            className={selectedImage === 3 ? "active" : ""}
+            onClick={() => handleClick(3)}
+          >
+            03
+          </p>
+          <p
+            className={selectedImage === 4 ? "active" : ""}
+            onClick={() => handleClick(4)}
+          >
+            04
+          </p>
+        </div>
       </div>
+
       <hr className="w-10 h-0.5 bg-black opacity-20 my-12 mx-6" />
       <div className="px-6 welcome">
         <div>
