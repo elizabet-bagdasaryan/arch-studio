@@ -6,6 +6,7 @@ import View from "../../assets/view.png";
 import Arrow from "../../assets/arrow.png";
 import { useState } from "react";
 import MapDesk from "../../assets/map-desk.png";
+
 function Contact() {
   const [name, setName] = useState("");
   const [nameError, setNameError] = useState(false);
@@ -18,18 +19,14 @@ function Contact() {
   const [messageError, setMessageError] = useState(false);
 
   const validateInputs = () => {
-    let isValid = true;
-
     if (!name.trim()) {
       setNameError(true);
-      isValid = false;
     } else {
       setNameError(false);
     }
 
     if (!message.trim()) {
       setMessageError(true);
-      isValid = false;
     } else {
       setMessageError(false);
     }
@@ -37,11 +34,9 @@ function Contact() {
     if (!email.trim()) {
       setEmailError(true);
       setEmailEmptyError(false);
-      isValid = false;
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)) {
       setEmailEmptyError(true);
       setEmailError(false);
-      isValid = false;
     } else {
       setEmailEmptyError(false);
       setEmailError(false);
